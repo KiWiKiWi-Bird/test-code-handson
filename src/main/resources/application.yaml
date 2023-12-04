@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:13306/real
+    username: root
+    password: abcd1234
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+  sql:
+    init:
+      mode: always
+
+logging:
+  level:
+    handson.testcodejpa: debug
+    org.hibernate:
+      type:
+        descriptor:
+          sql: trace
