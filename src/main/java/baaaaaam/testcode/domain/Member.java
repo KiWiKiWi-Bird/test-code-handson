@@ -9,10 +9,11 @@ import lombok.*;
 @Getter
 public class Member {
 
-    @Id
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer memberId;
 
     private String memberName;
+    @Column(unique = true)
     private String email;
 
     public Member(String memberName, String email) {
