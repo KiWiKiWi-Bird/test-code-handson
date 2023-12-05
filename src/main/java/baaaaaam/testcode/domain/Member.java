@@ -13,6 +13,7 @@ public class Member {
     private Integer memberId;
 
     private String memberName;
+
     @Column(unique = true)
     private String email;
 
